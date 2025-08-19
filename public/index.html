@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Piedra, Papel, Tijera, Lagarto, Spock</h1>
+
+  <div class="buttons">
+    <button data-choice="Piedra">✊ Piedra</button>
+    <button data-choice="Papel">✋ Papel</button>
+    <button data-choice="Tijera">✌️ Tijera</button>
+    <button data-choice="Lagarto">🦎 Lagarto</button>
+    <button data-choice="Spock">🖖 Spock</button>
+  </div>
+
+  <div class="result" id="result"></div>
+
+  <!-- Panel de batalla -->
+  <div class="battle">
+    <div>
+      <h3>Jugador</h3>
+      <div id="playerIcon" class="icon-box">❓</div>
+    </div>
+    <div class="vs">VS</div>
+    <div>
+      <h3>Computadora</h3>
+      <div id="computerIcon" class="icon-box">❓</div>
+    </div>
+  </div>
+
+  <div class="score" id="score">Jugador: 0 | Computadora: 0</div>
+  <div id="rules" class="rules">
+  <h2>Reglas del juego</h2>
+  <ul>
+    <li>✊ piedra destruye ✂️ tijera</li>
+    <li>✊ piedra aplasta 🦎 lagarto</li>
+    <li>🖐️ papel cubre ✊ piedra</li>
+    <li>🖐️ papel refuta 🖖 Spock</li>
+    <li>✂️ tijera corta 🖐️ papel</li>
+    <li>✂️ tijera decapita 🦎 lagarto</li>
+    <li>🦎 lagarto envenena 🖖 Spock</li>
+    <li>🦎 lagarto devora 🖐️ papel</li>
+    <li>🖖 Spock rompe ✊ piedra</li>
+    <li>🖖 Spock desintegra ✂️ tijera</li>
+  </ul>
+</div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
